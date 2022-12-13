@@ -1,0 +1,2194 @@
+{
+	"info": {
+		"_postman_id": "8894276d-1984-4bea-b4a0-60aa36d92341",
+		"name": "handover",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "property",
+			"item": [
+				{
+					"name": "add property",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWFlNDQ4ODk5YzZlNTM3MTQwMTY0N2QiLCJlbWFpbCI6InNhbWluYTkxQG1haWxpbmF0b3IuY29tIiwibmFtZSI6IlNhbWluYSIsImltYWdlVXJsIjoiIiwiaWF0IjoxNjM5NTg3MjcwLCJleHAiOjE2NzExMjMyNzB9.hHACfbXBwPBkrQSCZdHCqVTHuF-BcE-mHfUlgzf19vU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "propertyTitle",
+									"value": "EB Sunrise Bay T2-4-404",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Tower 2, 4th floor Corner unit  Balcony Palm view",
+									"type": "text"
+								},
+								{
+									"key": "area",
+									"value": "1394 Sqft",
+									"type": "text"
+								},
+								{
+									"key": "propertyType",
+									"value": "Secondary Unit",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "Emaar beachfront Dubai",
+									"type": "text"
+								},
+								{
+									"key": "bedrooms",
+									"value": "5",
+									"type": "text"
+								},
+								{
+									"key": "bathrooms",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "floors",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "priceDemand",
+									"value": "AED 3002888",
+									"type": "text"
+								},
+								{
+									"key": "biddingEnd",
+									"value": "12/20/2021",
+									"type": "text"
+								},
+								{
+									"key": "images",
+									"type": "file",
+									"src": "/C:/Users/Samina/OneDrive/Pictures/ap1.jpg"
+								},
+								{
+									"key": "images",
+									"type": "file",
+									"src": "/C:/Users/Samina/OneDrive/Pictures/ap2.jpg"
+								},
+								{
+									"key": "city",
+									"value": "Dubai",
+									"type": "text"
+								},
+								{
+									"key": "state",
+									"value": "Dubai",
+									"type": "text"
+								},
+								{
+									"key": "zip",
+									"value": "00000",
+									"type": "text"
+								},
+								{
+									"key": "images",
+									"type": "file",
+									"src": "/C:/Users/Samina/OneDrive/Pictures/ap1.jpg"
+								},
+								{
+									"key": "country",
+									"value": "Dubai",
+									"type": "text"
+								},
+								{
+									"key": "estCompletion",
+									"value": "2 years",
+									"type": "text"
+								},
+								{
+									"key": "paymentPlan",
+									"value": "down payment",
+									"type": "text"
+								},
+								{
+									"key": "amenities[0]",
+									"value": "fire alarm",
+									"type": "text"
+								},
+								{
+									"key": "amenities[1]",
+									"value": "pool",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "127.0.0.1:9091/property/add",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "9091",
+							"path": [
+								"property",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get properties all",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWFlNDQ4ODk5YzZlNTM3MTQwMTY0N2QiLCJlbWFpbCI6InNhbWluYTkxQG1haWxpbmF0b3IuY29tIiwibmFtZSI6IlNhbWluYSIsImltYWdlVXJsIjoiIiwiaWF0IjoxNjM5NTg3MjcwLCJleHAiOjE2NzExMjMyNzB9.hHACfbXBwPBkrQSCZdHCqVTHuF-BcE-mHfUlgzf19vU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "127.0.0.1:9091/property",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "9091",
+							"path": [
+								"property"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get user properties",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWFlNDQ4ODk5YzZlNTM3MTQwMTY0N2QiLCJlbWFpbCI6InNhbWluYTkxQG1haWxpbmF0b3IuY29tIiwibmFtZSI6IlNhbWluYSIsImltYWdlVXJsIjoiIiwiaWF0IjoxNjM5NTg3MjcwLCJleHAiOjE2NzExMjMyNzB9.hHACfbXBwPBkrQSCZdHCqVTHuF-BcE-mHfUlgzf19vU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "127.0.0.1:9091/property/userproperties",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "9091",
+							"path": [
+								"property",
+								"userproperties"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get single property",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWFlNDQ4ODk5YzZlNTM3MTQwMTY0N2QiLCJlbWFpbCI6InNhbWluYTkxQG1haWxpbmF0b3IuY29tIiwibmFtZSI6IlNhbWluYSIsImltYWdlVXJsIjoiIiwiaWF0IjoxNjM5NTg3MjcwLCJleHAiOjE2NzExMjMyNzB9.hHACfbXBwPBkrQSCZdHCqVTHuF-BcE-mHfUlgzf19vU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "127.0.0.1:9091/property/620e9396dc933f19701cfffb",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "9091",
+							"path": [
+								"property",
+								"620e9396dc933f19701cfffb"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "price range",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWFlNDQ4ODk5YzZlNTM3MTQwMTY0N2QiLCJlbWFpbCI6InNhbWluYTkxQG1haWxpbmF0b3IuY29tIiwibmFtZSI6IlNhbWluYSIsImltYWdlVXJsIjoiIiwiaWF0IjoxNjM5NTg3MjcwLCJleHAiOjE2NzExMjMyNzB9.hHACfbXBwPBkrQSCZdHCqVTHuF-BcE-mHfUlgzf19vU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"startPrice\":700000,\r\n    \"endPrice\":900000\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:9091/property/filter/pricerange",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "9091",
+							"path": [
+								"property",
+								"filter",
+								"pricerange"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "filter property",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWFlNDQ4ODk5YzZlNTM3MTQwMTY0N2QiLCJlbWFpbCI6InNhbWluYTkxQG1haWxpbmF0b3IuY29tIiwibmFtZSI6IlNhbWluYSIsImltYWdlVXJsIjoiIiwiaWF0IjoxNjM5NTg3MjcwLCJleHAiOjE2NzExMjMyNzB9.hHACfbXBwPBkrQSCZdHCqVTHuF-BcE-mHfUlgzf19vU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"bathrooms\":2   //anyfilter \r\n                    // can be \"bedrooms\":2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:9091/property/filter/others",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "9091",
+							"path": [
+								"property",
+								"filter",
+								"others"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "sort asc (old to new)",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWFlNDQ4ODk5YzZlNTM3MTQwMTY0N2QiLCJlbWFpbCI6InNhbWluYTkxQG1haWxpbmF0b3IuY29tIiwibmFtZSI6IlNhbWluYSIsImltYWdlVXJsIjoiIiwiaWF0IjoxNjM5NTg3MjcwLCJleHAiOjE2NzExMjMyNzB9.hHACfbXBwPBkrQSCZdHCqVTHuF-BcE-mHfUlgzf19vU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:9091/property/sort/asc",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "9091",
+							"path": [
+								"property",
+								"sort",
+								"asc"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "sort dsc ( newest to oldest)",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWFlNDQ4ODk5YzZlNTM3MTQwMTY0N2QiLCJlbWFpbCI6InNhbWluYTkxQG1haWxpbmF0b3IuY29tIiwibmFtZSI6IlNhbWluYSIsImltYWdlVXJsIjoiIiwiaWF0IjoxNjM5NTg3MjcwLCJleHAiOjE2NzExMjMyNzB9.hHACfbXBwPBkrQSCZdHCqVTHuF-BcE-mHfUlgzf19vU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:9091/property/sort/desc",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "9091",
+							"path": [
+								"property",
+								"sort",
+								"desc"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "sort price desc (high to low)",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWFlNDQ4ODk5YzZlNTM3MTQwMTY0N2QiLCJlbWFpbCI6InNhbWluYTkxQG1haWxpbmF0b3IuY29tIiwibmFtZSI6IlNhbWluYSIsImltYWdlVXJsIjoiIiwiaWF0IjoxNjM5NTg3MjcwLCJleHAiOjE2NzExMjMyNzB9.hHACfbXBwPBkrQSCZdHCqVTHuF-BcE-mHfUlgzf19vU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:9091/property/sort/pricedesc",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "9091",
+							"path": [
+								"property",
+								"sort",
+								"pricedesc"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "sort price asc(low to high)",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWFlNDQ4ODk5YzZlNTM3MTQwMTY0N2QiLCJlbWFpbCI6InNhbWluYTkxQG1haWxpbmF0b3IuY29tIiwibmFtZSI6IlNhbWluYSIsImltYWdlVXJsIjoiIiwiaWF0IjoxNjM5NTg3MjcwLCJleHAiOjE2NzExMjMyNzB9.hHACfbXBwPBkrQSCZdHCqVTHuF-BcE-mHfUlgzf19vU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:9091/property/sort/priceasc",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "9091",
+							"path": [
+								"property",
+								"sort",
+								"priceasc"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "counts",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWFlNDQ4ODk5YzZlNTM3MTQwMTY0N2QiLCJlbWFpbCI6InNhbWluYTkxQG1haWxpbmF0b3IuY29tIiwibmFtZSI6IlNhbWluYSIsImltYWdlVXJsIjoiIiwiaWF0IjoxNjM5NTg3MjcwLCJleHAiOjE2NzExMjMyNzB9.hHACfbXBwPBkrQSCZdHCqVTHuF-BcE-mHfUlgzf19vU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:9091/property/counts",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "9091",
+							"path": [
+								"property",
+								"counts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "seller counts",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWFlNDQ4ODk5YzZlNTM3MTQwMTY0N2QiLCJlbWFpbCI6InNhbWluYTkxQG1haWxpbmF0b3IuY29tIiwibmFtZSI6IlNhbWluYSIsImltYWdlVXJsIjoiIiwiaWF0IjoxNjM5NTg3MjcwLCJleHAiOjE2NzExMjMyNzB9.hHACfbXBwPBkrQSCZdHCqVTHuF-BcE-mHfUlgzf19vU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:9091/property/sellercounts",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "9091",
+							"path": [
+								"property",
+								"sellercounts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "search property",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWFlNDQ4ODk5YzZlNTM3MTQwMTY0N2QiLCJlbWFpbCI6InNhbWluYTkxQG1haWxpbmF0b3IuY29tIiwibmFtZSI6IlNhbWluYSIsImltYWdlVXJsIjoiIiwiaWF0IjoxNjM5NTg3MjcwLCJleHAiOjE2NzExMjMyNzB9.hHACfbXBwPBkrQSCZdHCqVTHuF-BcE-mHfUlgzf19vU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"propertyTitle\":\"x\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:9091/property/search",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "9091",
+							"path": [
+								"property",
+								"search"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "seller graph",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWE5ZjJjNDBjM2ZiZDEwYzg3OTA4ZTEiLCJlbWFpbCI6InNhbWluYW11bnNpYkBnbWFpbC5jb20iLCJuYW1lIjoiU2FtaW5hIiwiaW1hZ2VVcmwiOiIiLCJpYXQiOjE2NDAwMTg1NDIsImV4cCI6MTY3MTU1NDU0Mn0.DIWacDfRUaGTF9QImpL2zzLJ4sLjpBkfgeNUoHufkqk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:9091/property/sellergraph",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "9091",
+							"path": [
+								"property",
+								"sellergraph"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "edit property",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWFlNDQ4ODk5YzZlNTM3MTQwMTY0N2QiLCJlbWFpbCI6InNhbWluYTkxQG1haWxpbmF0b3IuY29tIiwibmFtZSI6IlNhbWluYSIsImltYWdlVXJsIjoiIiwiaWF0IjoxNjM5NTg3MjcwLCJleHAiOjE2NzExMjMyNzB9.hHACfbXBwPBkrQSCZdHCqVTHuF-BcE-mHfUlgzf19vU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"description\":\"just test 2 3 4 5\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:9091/property/edit/62248c699ac1db0016fb390b",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "9091",
+							"path": [
+								"property",
+								"edit",
+								"62248c699ac1db0016fb390b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete property",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWFlNDQ4ODk5YzZlNTM3MTQwMTY0N2QiLCJlbWFpbCI6InNhbWluYTkxQG1haWxpbmF0b3IuY29tIiwibmFtZSI6IlNhbWluYSIsImltYWdlVXJsIjoiIiwiaWF0IjoxNjM5NTg3MjcwLCJleHAiOjE2NzExMjMyNzB9.hHACfbXBwPBkrQSCZdHCqVTHuF-BcE-mHfUlgzf19vU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:9091/property/delete/61ba22d2a7f20d43303f1147",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "9091",
+							"path": [
+								"property",
+								"delete",
+								"61ba22d2a7f20d43303f1147"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Bidding",
+			"item": [
+				{
+					"name": "bid",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWE5ZjJjNDBjM2ZiZDEwYzg3OTA4ZTEiLCJlbWFpbCI6InNhbWluYW11bnNpYkBnbWFpbC5jb20iLCJuYW1lIjoiU2FtaW5hIiwiaW1hZ2VVcmwiOiIiLCJpYXQiOjE2NDAwMTg1NDIsImV4cCI6MTY3MTU1NDU0Mn0.DIWacDfRUaGTF9QImpL2zzLJ4sLjpBkfgeNUoHufkqk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n    \"propertyId\":\"6223b3b27762c100164811c1\",\r\n    \"sellerId\":\"61a8f710f8320b5dac23bfc4\",\r\n    \"sellerName\":\"Samina\",\r\n    \"bidAmount\":\"12345678000\",\r\n    \"actualAmount\":\"12345678\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:9091/bidding/bid",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "9091",
+							"path": [
+								"bidding",
+								"bid"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "editstatus",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWE5ZjJjNDBjM2ZiZDEwYzg3OTA4ZTEiLCJlbWFpbCI6InNhbWluYW11bnNpYkBnbWFpbC5jb20iLCJuYW1lIjoiU2FtaW5hIiwiaW1hZ2VVcmwiOiIiLCJpYXQiOjE2NDAwMTg1NDIsImV4cCI6MTY3MTU1NDU0Mn0.DIWacDfRUaGTF9QImpL2zzLJ4sLjpBkfgeNUoHufkqk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n    \"bidId\":\"61c0b46dd6cce01c2c09c6b2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:9091/bidding/editstatus",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "9091",
+							"path": [
+								"bidding",
+								"editstatus"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get user biddings",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWE5ZjJjNDBjM2ZiZDEwYzg3OTA4ZTEiLCJlbWFpbCI6InNhbWluYW11bnNpYkBnbWFpbC5jb20iLCJuYW1lIjoiU2FtaW5hIiwiaW1hZ2VVcmwiOiIiLCJpYXQiOjE2NDAwMTg1NDIsImV4cCI6MTY3MTU1NDU0Mn0.DIWacDfRUaGTF9QImpL2zzLJ4sLjpBkfgeNUoHufkqk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:9091/bidding/userbiddings",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "9091",
+							"path": [
+								"bidding",
+								"userbiddings"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "bidding on seller properties",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWE5ZjJjNDBjM2ZiZDEwYzg3OTA4ZTEiLCJlbWFpbCI6InNhbWluYW11bnNpYkBnbWFpbC5jb20iLCJuYW1lIjoiU2FtaW5hIiwiaW1hZ2VVcmwiOiIiLCJpYXQiOjE2NDAwMTg1NDIsImV4cCI6MTY3MTU1NDU0Mn0.DIWacDfRUaGTF9QImpL2zzLJ4sLjpBkfgeNUoHufkqk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:9091/bidding/sellerproperties",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "9091",
+							"path": [
+								"bidding",
+								"sellerproperties"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "acceptBid",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWE5ZjJjNDBjM2ZiZDEwYzg3OTA4ZTEiLCJlbWFpbCI6InNhbWluYW11bnNpYkBnbWFpbC5jb20iLCJuYW1lIjoiU2FtaW5hIiwiaW1hZ2VVcmwiOiIiLCJpYXQiOjE2NDAwMTg1NDIsImV4cCI6MTY3MTU1NDU0Mn0.DIWacDfRUaGTF9QImpL2zzLJ4sLjpBkfgeNUoHufkqk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:9091/bidding/acceptbid/6255b8f77c8b615afcb586d9",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "9091",
+							"path": [
+								"bidding",
+								"acceptbid",
+								"6255b8f77c8b615afcb586d9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "all biddings on single property",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWE5ZjJjNDBjM2ZiZDEwYzg3OTA4ZTEiLCJlbWFpbCI6InNhbWluYW11bnNpYkBnbWFpbC5jb20iLCJuYW1lIjoiU2FtaW5hIiwiaW1hZ2VVcmwiOiIiLCJpYXQiOjE2NDAwMTg1NDIsImV4cCI6MTY3MTU1NDU0Mn0.DIWacDfRUaGTF9QImpL2zzLJ4sLjpBkfgeNUoHufkqk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"propertyId\":\"620e9396dc933f19701cfffb\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:9091/bidding/property",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "9091",
+							"path": [
+								"bidding",
+								"property"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get highest bid on property",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWE5ZjJjNDBjM2ZiZDEwYzg3OTA4ZTEiLCJlbWFpbCI6InNhbWluYW11bnNpYkBnbWFpbC5jb20iLCJuYW1lIjoiU2FtaW5hIiwiaW1hZ2VVcmwiOiIiLCJpYXQiOjE2NDAwMTg1NDIsImV4cCI6MTY3MTU1NDU0Mn0.DIWacDfRUaGTF9QImpL2zzLJ4sLjpBkfgeNUoHufkqk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"propertyId\":\"620e9396dc933f19701cfffb\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:9091/bidding/highest",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "9091",
+							"path": [
+								"bidding",
+								"highest"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "bid count",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWE5ZjJjNDBjM2ZiZDEwYzg3OTA4ZTEiLCJlbWFpbCI6InNhbWluYW11bnNpYkBnbWFpbC5jb20iLCJuYW1lIjoiU2FtaW5hIiwiaW1hZ2VVcmwiOiIiLCJpYXQiOjE2NDAwMTg1NDIsImV4cCI6MTY3MTU1NDU0Mn0.DIWacDfRUaGTF9QImpL2zzLJ4sLjpBkfgeNUoHufkqk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:9091/bidding/bidcount",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "9091",
+							"path": [
+								"bidding",
+								"bidcount"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "payment",
+			"item": [
+				{
+					"name": "pay",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWFlNDQ4ODk5YzZlNTM3MTQwMTY0N2QiLCJlbWFpbCI6InNhbWluYTkxQG1haWxpbmF0b3IuY29tIiwibmFtZSI6IlNhbWluYSIsImltYWdlVXJsIjoiIiwiaWF0IjoxNjM5NTg3MjcwLCJleHAiOjE2NzExMjMyNzB9.hHACfbXBwPBkrQSCZdHCqVTHuF-BcE-mHfUlgzf19vU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"bidderId\": \"61dc5801d3e2e251a8c0ef28\",\r\n    \"sellerId\": \"61a8f710f8320b5dac23bfc4\",\r\n    \"sellerName\":\"samina\",\r\n    \"propertyId\": \"6223b3b27762c100164811c1\",\r\n    \"propertyName\":\"abc\",\r\n    \"amount\":\"1000\",\r\n    \"token\":\"tok_1K9ouNJEYFz5N2AnEEunwU73\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:9091/payment/pay",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "9091",
+							"path": [
+								"payment",
+								"pay"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "paytest",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWFlNDQ4ODk5YzZlNTM3MTQwMTY0N2QiLCJlbWFpbCI6InNhbWluYTkxQG1haWxpbmF0b3IuY29tIiwibmFtZSI6IlNhbWluYSIsImltYWdlVXJsIjoiIiwiaWF0IjoxNjM5NTg3MjcwLCJleHAiOjE2NzExMjMyNzB9.hHACfbXBwPBkrQSCZdHCqVTHuF-BcE-mHfUlgzf19vU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"bidderId\": \"61a9f2c40c3fbd10c87908e1\",\r\n    \"sellerId\": \"61ae448899c6e5371401647d\",\r\n    \"propertyId\": \"61ba24e1c483ad38fcd81873\",\r\n    \"amount\":\"1000\",\r\n    \"token\":\"tok_1K9ouNJEYFz5N2AnEEunwU73\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:9091/payment/paytest",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "9091",
+							"path": [
+								"payment",
+								"paytest"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get buyer payments",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWFlNDQ4ODk5YzZlNTM3MTQwMTY0N2QiLCJlbWFpbCI6InNhbWluYTkxQG1haWxpbmF0b3IuY29tIiwibmFtZSI6IlNhbWluYSIsImltYWdlVXJsIjoiIiwiaWF0IjoxNjM5NTg3MjcwLCJleHAiOjE2NzExMjMyNzB9.hHACfbXBwPBkrQSCZdHCqVTHuF-BcE-mHfUlgzf19vU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:9091/payment/buyer",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "9091",
+							"path": [
+								"payment",
+								"buyer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all payments",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWFlNDQ4ODk5YzZlNTM3MTQwMTY0N2QiLCJlbWFpbCI6InNhbWluYTkxQG1haWxpbmF0b3IuY29tIiwibmFtZSI6IlNhbWluYSIsImltYWdlVXJsIjoiIiwiaWF0IjoxNjM5NTg3MjcwLCJleHAiOjE2NzExMjMyNzB9.hHACfbXBwPBkrQSCZdHCqVTHuF-BcE-mHfUlgzf19vU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:9091/payment",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "9091",
+							"path": [
+								"payment"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get seller payments",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWFlNDQ4ODk5YzZlNTM3MTQwMTY0N2QiLCJlbWFpbCI6InNhbWluYTkxQG1haWxpbmF0b3IuY29tIiwibmFtZSI6IlNhbWluYSIsImltYWdlVXJsIjoiIiwiaWF0IjoxNjM5NTg3MjcwLCJleHAiOjE2NzExMjMyNzB9.hHACfbXBwPBkrQSCZdHCqVTHuF-BcE-mHfUlgzf19vU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:9091/payment/seller",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "9091",
+							"path": [
+								"payment",
+								"seller"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Contact us",
+			"item": [
+				{
+					"name": "send message",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"sam\",\r\n    \"email\":\"sam@gmail.com\",\r\n    \"message\":\"heyyyyy\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:9091/contact/contactus",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "9091",
+							"path": [
+								"contact",
+								"contactus"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get messages",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:9091/contact",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "9091",
+							"path": [
+								"contact"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get single",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:9091/contact/61d8677bce8cf57848533486",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "9091",
+							"path": [
+								"contact",
+								"61d8677bce8cf57848533486"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "admin",
+			"item": [
+				{
+					"name": "admin login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"admin@gmail.com\",\r\n    \"password\":\"qwerty000\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:9091/signin/admin",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "9091",
+							"path": [
+								"signin",
+								"admin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update user status",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZTk0NGViMmIyYmFkZjFiOTg0ZTcyODQiLCJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsIm5hbWUiOiJBZG1pbiIsInVzZXJUeXBlIjoiYWRtaW4iLCJpbWFnZVVybCI6Imh0dHBzOi8vYnVpbGRuZXdnb3Z0LnMzLmFtYXpvbmF3cy5jb20vcnlhbi5qcGciLCJpYXQiOjE2NDE2Njk1MjksImV4cCI6MTY3MzIwNTUyOX0.hSMjt2nqsWdt4JFW6S-z6jeEKaF4AP3ObqOY5y5P_CM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":\"61a8f710f8320b5dac23bfc4\",\r\n    \"userstatus\":\"Inactive\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:9091/admin/user/editstatus",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "9091",
+							"path": [
+								"admin",
+								"user",
+								"editstatus"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all users",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZTk0NGViMmIyYmFkZjFiOTg0ZTcyODQiLCJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsIm5hbWUiOiJBZG1pbiIsInVzZXJUeXBlIjoiYWRtaW4iLCJpbWFnZVVybCI6Imh0dHBzOi8vYnVpbGRuZXdnb3Z0LnMzLmFtYXpvbmF3cy5jb20vcnlhbi5qcGciLCJpYXQiOjE2NDE2Njk1MjksImV4cCI6MTY3MzIwNTUyOX0.hSMjt2nqsWdt4JFW6S-z6jeEKaF4AP3ObqOY5y5P_CM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:9091/admin/users/all",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "9091",
+							"path": [
+								"admin",
+								"users",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get properties all",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZTk0NGViMmIyYmFkZjFiOTg0ZTcyODQiLCJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsIm5hbWUiOiJBZG1pbiIsInVzZXJUeXBlIjoiYWRtaW4iLCJpbWFnZVVybCI6Imh0dHBzOi8vYnVpbGRuZXdnb3Z0LnMzLmFtYXpvbmF3cy5jb20vcnlhbi5qcGciLCJpYXQiOjE2NDE2Njk1MjksImV4cCI6MTY3MzIwNTUyOX0.hSMjt2nqsWdt4JFW6S-z6jeEKaF4AP3ObqOY5y5P_CM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "127.0.0.1:9091/admin/properties/all",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "9091",
+							"path": [
+								"admin",
+								"properties",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get single property",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZTk0NGViMmIyYmFkZjFiOTg0ZTcyODQiLCJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsIm5hbWUiOiJBZG1pbiIsInVzZXJUeXBlIjoiYWRtaW4iLCJpbWFnZVVybCI6Imh0dHBzOi8vYnVpbGRuZXdnb3Z0LnMzLmFtYXpvbmF3cy5jb20vcnlhbi5qcGciLCJpYXQiOjE2NDE2Njk1MjksImV4cCI6MTY3MzIwNTUyOX0.hSMjt2nqsWdt4JFW6S-z6jeEKaF4AP3ObqOY5y5P_CM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "127.0.0.1:9091/admin/property/61ba25a7b2e8a043349cf6b6",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "9091",
+							"path": [
+								"admin",
+								"property",
+								"61ba25a7b2e8a043349cf6b6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete property",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZTk0NGViMmIyYmFkZjFiOTg0ZTcyODQiLCJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsIm5hbWUiOiJBZG1pbiIsInVzZXJUeXBlIjoiYWRtaW4iLCJpbWFnZVVybCI6Imh0dHBzOi8vYnVpbGRuZXdnb3Z0LnMzLmFtYXpvbmF3cy5jb20vcnlhbi5qcGciLCJpYXQiOjE2NDE2Njk1MjksImV4cCI6MTY3MzIwNTUyOX0.hSMjt2nqsWdt4JFW6S-z6jeEKaF4AP3ObqOY5y5P_CM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:9091/admin/property/delete/61ba22d2a7f20d43303f1147",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "9091",
+							"path": [
+								"admin",
+								"property",
+								"delete",
+								"61ba22d2a7f20d43303f1147"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "edit property",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZTk0NGViMmIyYmFkZjFiOTg0ZTcyODQiLCJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsIm5hbWUiOiJBZG1pbiIsInVzZXJUeXBlIjoiYWRtaW4iLCJpbWFnZVVybCI6Imh0dHBzOi8vYnVpbGRuZXdnb3Z0LnMzLmFtYXpvbmF3cy5jb20vcnlhbi5qcGciLCJpYXQiOjE2NDE2Njk1MjksImV4cCI6MTY3MzIwNTUyOX0.hSMjt2nqsWdt4JFW6S-z6jeEKaF4AP3ObqOY5y5P_CM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"propertyTitle\":\"XYZZZ\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:9091/admin/property/edit/61ba25a7b2e8a043349cf6b6",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "9091",
+							"path": [
+								"admin",
+								"property",
+								"edit",
+								"61ba25a7b2e8a043349cf6b6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get messages",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZTk0NGViMmIyYmFkZjFiOTg0ZTcyODQiLCJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsIm5hbWUiOiJBZG1pbiIsInVzZXJUeXBlIjoiYWRtaW4iLCJpbWFnZVVybCI6Imh0dHBzOi8vYnVpbGRuZXdnb3Z0LnMzLmFtYXpvbmF3cy5jb20vcnlhbi5qcGciLCJpYXQiOjE2NDE2Njk1MjksImV4cCI6MTY3MzIwNTUyOX0.hSMjt2nqsWdt4JFW6S-z6jeEKaF4AP3ObqOY5y5P_CM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:9091/admin/messages/all",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "9091",
+							"path": [
+								"admin",
+								"messages",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get single message",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZTk0NGViMmIyYmFkZjFiOTg0ZTcyODQiLCJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsIm5hbWUiOiJBZG1pbiIsInVzZXJUeXBlIjoiYWRtaW4iLCJpbWFnZVVybCI6Imh0dHBzOi8vYnVpbGRuZXdnb3Z0LnMzLmFtYXpvbmF3cy5jb20vcnlhbi5qcGciLCJpYXQiOjE2NDE2Njk1MjksImV4cCI6MTY3MzIwNTUyOX0.hSMjt2nqsWdt4JFW6S-z6jeEKaF4AP3ObqOY5y5P_CM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:9091/admin/message/61d8677bce8cf57848533486",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "9091",
+							"path": [
+								"admin",
+								"message",
+								"61d8677bce8cf57848533486"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "all biddings on single property",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZTk0NGViMmIyYmFkZjFiOTg0ZTcyODQiLCJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsIm5hbWUiOiJBZG1pbiIsInVzZXJUeXBlIjoiYWRtaW4iLCJpbWFnZVVybCI6Imh0dHBzOi8vYnVpbGRuZXdnb3Z0LnMzLmFtYXpvbmF3cy5jb20vcnlhbi5qcGciLCJpYXQiOjE2NDE2Njk1MjksImV4cCI6MTY3MzIwNTUyOX0.hSMjt2nqsWdt4JFW6S-z6jeEKaF4AP3ObqOY5y5P_CM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"propertyId\":\"61c785fed0def8fe921d0f9b\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:9091/admin/bidding/onproperty",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "9091",
+							"path": [
+								"admin",
+								"bidding",
+								"onproperty"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all  biddings",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZTk0NGViMmIyYmFkZjFiOTg0ZTcyODQiLCJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsIm5hbWUiOiJBZG1pbiIsInVzZXJUeXBlIjoiYWRtaW4iLCJpbWFnZVVybCI6Imh0dHBzOi8vYnVpbGRuZXdnb3Z0LnMzLmFtYXpvbmF3cy5jb20vcnlhbi5qcGciLCJpYXQiOjE2NDE2Njk1MjksImV4cCI6MTY3MzIwNTUyOX0.hSMjt2nqsWdt4JFW6S-z6jeEKaF4AP3ObqOY5y5P_CM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:9091/admin/bidding/all",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "9091",
+							"path": [
+								"admin",
+								"bidding",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get highest bid on property",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZTk0NGViMmIyYmFkZjFiOTg0ZTcyODQiLCJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsIm5hbWUiOiJBZG1pbiIsInVzZXJUeXBlIjoiYWRtaW4iLCJpbWFnZVVybCI6Imh0dHBzOi8vYnVpbGRuZXdnb3Z0LnMzLmFtYXpvbmF3cy5jb20vcnlhbi5qcGciLCJpYXQiOjE2NDE2Njk1MjksImV4cCI6MTY3MzIwNTUyOX0.hSMjt2nqsWdt4JFW6S-z6jeEKaF4AP3ObqOY5y5P_CM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"propertyId\":\"61ba24e1c483ad38fcd81873\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:9091/admin/bidding/highest",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "9091",
+							"path": [
+								"admin",
+								"bidding",
+								"highest"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all payments",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZTk0NGViMmIyYmFkZjFiOTg0ZTcyODQiLCJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsIm5hbWUiOiJBZG1pbiIsInVzZXJUeXBlIjoiYWRtaW4iLCJpbWFnZVVybCI6Imh0dHBzOi8vYnVpbGRuZXdnb3Z0LnMzLmFtYXpvbmF3cy5jb20vcnlhbi5qcGciLCJpYXQiOjE2NDE2Njk1MjksImV4cCI6MTY3MzIwNTUyOX0.hSMjt2nqsWdt4JFW6S-z6jeEKaF4AP3ObqOY5y5P_CM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:9091/admin/payment/all",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "9091",
+							"path": [
+								"admin",
+								"payment",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "transfer",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZTk0NGViMmIyYmFkZjFiOTg0ZTcyODQiLCJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsIm5hbWUiOiJBZG1pbiIsInVzZXJUeXBlIjoiYWRtaW4iLCJpbWFnZVVybCI6Imh0dHBzOi8vYnVpbGRuZXdnb3Z0LnMzLmFtYXpvbmF3cy5jb20vcnlhbi5qcGciLCJpYXQiOjE2NDE2Njk1MjksImV4cCI6MTY3MzIwNTUyOX0.hSMjt2nqsWdt4JFW6S-z6jeEKaF4AP3ObqOY5y5P_CM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"paymentId\": \"6293a0338c88f7377446d5ff\",\r\n    \"releaseAmount\":\"100\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:9091/admin/payment/transfer",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "9091",
+							"path": [
+								"admin",
+								"payment",
+								"transfer"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"saminastripetest@mailinator.com\",\r\n    \"name\":\"Samina\",\r\n    \"password\":\"12345678\",\r\n    \"phone\":2423423,\r\n    \"userType\":\"Seller\"\r\n    \r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:9091/signup",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "9091",
+					"path": [
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "verify email",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"code\":\"bda20ee4ba33ae31480e210856f9b04e\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:9091/signup/verifyemail",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "9091",
+					"path": [
+						"signup",
+						"verifyemail"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "signin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"samina@gmail.com\",\r\n    \"password\":\"12345678\"\r\n    \r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:9091/signin",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "9091",
+					"path": [
+						"signin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all users",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWFlNDQ4ODk5YzZlNTM3MTQwMTY0N2QiLCJlbWFpbCI6InNhbWluYTkxQG1haWxpbmF0b3IuY29tIiwibmFtZSI6IlNhbWluYSIsImltYWdlVXJsIjoiIiwiaWF0IjoxNjM4ODEwODQ4LCJleHAiOjE2NzAzNDY4NDh9.8surBRJ3S5frZKK7YXIwqgClfs73FRYfxwAkLlnveIs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:9091/user/getallusers",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "9091",
+					"path": [
+						"user",
+						"getallusers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get user",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWRjNTgwMWQzZTJlMjUxYThjMGVmMjgiLCJlbWFpbCI6InNhbWluYXN0cmlwZXRlc3RAbWFpbGluYXRvci5jb20iLCJuYW1lIjoiU2FtaW5hIiwiaW1hZ2VVcmwiOiIiLCJwaG9uZSI6MjQyMzQyMywic3RhdHVzIjoiVmVyaWZpZWQiLCJ1c2VyVHlwZSI6IlNlbGxlciIsInN0cmlwZUlkIjoiYWNjdF8xS0dRSHBRcTdBN1JONXJJIiwiZXh0ZXJuYWxBY2NvdW50Q29ubmVjdGVkIjpmYWxzZSwiaWF0IjoxNjQxODMwNDU3LCJleHAiOjE2NzMzNjY0NTd9.vjDSuHExHIOsWQF64seuHttpqnKzpz-cReuTAfZ_OVk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:9091/user",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "9091",
+					"path": [
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "edit user",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWRjNTgwMWQzZTJlMjUxYThjMGVmMjgiLCJlbWFpbCI6InNhbWluYXN0cmlwZXRlc3RAbWFpbGluYXRvci5jb20iLCJuYW1lIjoiU2FtaW5hIiwiaW1hZ2VVcmwiOiIiLCJwaG9uZSI6MjQyMzQyMywic3RhdHVzIjoiVmVyaWZpZWQiLCJ1c2VyVHlwZSI6IlNlbGxlciIsInN0cmlwZUlkIjoiYWNjdF8xS0dRSHBRcTdBN1JONXJJIiwiZXh0ZXJuYWxBY2NvdW50Q29ubmVjdGVkIjpmYWxzZSwiaWF0IjoxNjQxODMwNDU3LCJleHAiOjE2NzMzNjY0NTd9.vjDSuHExHIOsWQF64seuHttpqnKzpz-cReuTAfZ_OVk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "stripeId",
+							"value": "acct_1KGQHpQq7A7RN5rI",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "127.0.0.1:9091/user/edituser/61dc5801d3e2e251a8c0ef28",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "9091",
+					"path": [
+						"user",
+						"edituser",
+						"61dc5801d3e2e251a8c0ef28"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "reset password",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWFlNDQ4ODk5YzZlNTM3MTQwMTY0N2QiLCJlbWFpbCI6InNhbWluYTkxQG1haWxpbmF0b3IuY29tIiwibmFtZSI6IlNhbWluYSIsImltYWdlVXJsIjoiIiwiaWF0IjoxNjM4ODEwODQ4LCJleHAiOjE2NzAzNDY4NDh9.8surBRJ3S5frZKK7YXIwqgClfs73FRYfxwAkLlnveIs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"currpassword\":\"12345678\",\r\n    \"newpassword\":\"12345\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:9091/user/resetpassword",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "9091",
+					"path": [
+						"user",
+						"resetpassword"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "forgot password",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWFlNDQ4ODk5YzZlNTM3MTQwMTY0N2QiLCJlbWFpbCI6InNhbWluYTkxQG1haWxpbmF0b3IuY29tIiwibmFtZSI6IlNhbWluYSIsImltYWdlVXJsIjoiIiwiaWF0IjoxNjM4ODEwODQ4LCJleHAiOjE2NzAzNDY4NDh9.8surBRJ3S5frZKK7YXIwqgClfs73FRYfxwAkLlnveIs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"samina91@mailinator.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:9091/user/forgotpassword",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "9091",
+					"path": [
+						"user",
+						"forgotpassword"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "edit password",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWFlNDQ4ODk5YzZlNTM3MTQwMTY0N2QiLCJlbWFpbCI6InNhbWluYTkxQG1haWxpbmF0b3IuY29tIiwibmFtZSI6IlNhbWluYSIsImltYWdlVXJsIjoiIiwiaWF0IjoxNjM4ODEwODQ4LCJleHAiOjE2NzAzNDY4NDh9.8surBRJ3S5frZKK7YXIwqgClfs73FRYfxwAkLlnveIs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"code\":\"2a98937dc2663fce72e9c89ae1657d09\",\r\n    \"password\":\"1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:9091/user/editpassword",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "9091",
+					"path": [
+						"user",
+						"editpassword"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add bank",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWRjNTgwMWQzZTJlMjUxYThjMGVmMjgiLCJlbWFpbCI6InNhbWluYXN0cmlwZXRlc3RAbWFpbGluYXRvci5jb20iLCJuYW1lIjoiU2FtaW5hIiwiaW1hZ2VVcmwiOiIiLCJwaG9uZSI6MjQyMzQyMywic3RhdHVzIjoiVmVyaWZpZWQiLCJ1c2VyVHlwZSI6IlNlbGxlciIsInN0cmlwZUlkIjoiYWNjdF8xS0dRSHBRcTdBN1JONXJJIiwiZXh0ZXJuYWxBY2NvdW50Q29ubmVjdGVkIjpmYWxzZSwiaWF0IjoxNjQxODMwNDU3LCJleHAiOjE2NzMzNjY0NTd9.vjDSuHExHIOsWQF64seuHttpqnKzpz-cReuTAfZ_OVk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"cardNumber\":\"4000056655665556\",\r\n    \"expMonth\":12,\r\n    \"expYear\":2022,\r\n    \"cvc\":\"314\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:9091/user/addbank",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "9091",
+					"path": [
+						"user",
+						"addbank"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
